@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<style>
+  body { margin: 0; }
+</style>
+<script src="image-slot.js"></script>
+</helmet>
+
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <!-- 01 · TITLE -->
+  <section data-label="Title" data-screen-label="01" data-speaker-notes="오프닝. 오늘의 주제는 스트레스를 없애는 법이 아니라, 스트레스 속에서 살아남는 가장 현실적인 방법입니다." style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:100px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <h1 style="margin:0; font-size:96px; font-weight:800; letter-spacing:-0.02em; line-height:1.12;"><span>나의 </span><span style="color:var(--accent,#34e0c4);">스트레스</span><span> 생존법</span></h1>
+  </section>
+
+  <!-- 02 · SECTION -->
+  <section data-label="현대인의 스트레스" data-screen-label="02" data-speaker-notes="스트레스는 없앨 수 없는 상수입니다. 질문을 바꿔야 합니다 — 어떻게 살아남을 것인가." style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:100px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <span style="width:64px; height:5px; border-radius:3px; background:var(--accent,#34e0c4); margin-bottom:44px;"></span>
+    <h1 style="margin:0; font-size:92px; font-weight:800; letter-spacing:-0.02em; line-height:1.1;">현대인의 스트레스</h1>
+  </section>
+
+  <!-- 03 · DATA TABLE -->
+  <section data-label="주요 지표" data-screen-label="03" data-speaker-notes="숫자로 보는 현실. 성인 4명 중 1명이 스트레스를 체감하고, 1위 원인은 돈, 2위는 사람입니다. 그리고 사람들이 가장 선호하는 해소법은 다름 아닌 '수면과 휴식'입니다." style="display:flex; flex-direction:column; justify-content:center; padding:96px 110px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <div style="display:flex; align-items:center; gap:28px; margin-bottom:60px;">
+      <span style="width:8px; height:60px; border-radius:3px; background:var(--accent,#34e0c4);"></span>
+      <h2 style="margin:0; font-size:60px; font-weight:800; letter-spacing:-0.02em;">2025–2026 스트레스 주요 지표</h2>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,0.09); border-radius:18px; overflow:hidden; background:rgba(255,255,255,0.02);">
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:34px 44px; background:rgba(255,255,255,0.035);">
+        <span style="font-size:27px; font-weight:700; color:var(--accent,#34e0c4);">구분</span>
+        <span style="font-size:27px; font-weight:700; color:var(--accent,#34e0c4);">항목</span>
+        <span style="font-size:27px; font-weight:700; color:var(--accent,#34e0c4);">비율 / 데이터</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:38px 44px; border-top:1px solid rgba(255,255,255,0.07);">
+        <span style="font-size:31px; color:#eef2f7;">스트레스 인지율</span>
+        <span style="font-size:31px; color:#c2cad6;">전국 성인 평균</span>
+        <span style="font-size:31px; color:#c2cad6;">약 24.2% (서울 26.3%)</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:38px 44px; border-top:1px solid rgba(255,255,255,0.07);">
+        <span style="font-size:31px; color:#eef2f7;">주요 원인 1위</span>
+        <span style="font-size:31px; color:#c2cad6;">경제적 어려움</span>
+        <span style="font-size:31px; color:#c2cad6;">36.6%</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:38px 44px; border-top:1px solid rgba(255,255,255,0.07);">
+        <span style="font-size:31px; color:#eef2f7;">주요 원인 2위</span>
+        <span style="font-size:31px; color:#c2cad6;">대인관계 갈등</span>
+        <span style="font-size:31px; color:#c2cad6;">27.6%</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:38px 44px; border-top:1px solid rgba(255,255,255,0.07);">
+        <span style="font-size:31px; color:#eef2f7;">선호 해소법 1위</span>
+        <span style="font-size:31px; color:#c2cad6;">수면 및 휴식</span>
+        <span style="font-size:31px; color:#c2cad6;">28.6%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · SECTION -->
+  <section data-label="3단계 생존 전략" data-screen-label="04" data-speaker-notes="거창한 자기계발이나 취미가 아닙니다. 가장 본능적인 세 가지 — 술, 잠, 망각을 순위별로 소개합니다." style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:100px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <span style="width:64px; height:5px; border-radius:3px; background:var(--accent,#34e0c4); margin-bottom:44px;"></span>
+    <h1 style="margin:0; font-size:92px; font-weight:800; letter-spacing:-0.02em; line-height:1.1;">나만의 3단계 생존 전략</h1>
+  </section>
+
+  <!-- 05 · RANK 3 (content + image) -->
+  <section data-label="RANK 3 · 술" data-screen-label="05" data-speaker-notes="3위는 술입니다. 하루의 끝, 시원한 맥주 한 잔은 뇌를 잠시 마취시켜 주는 가장 빠른 비상약입니다." style="display:flex; flex-direction:column; padding:90px 100px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <div style="display:flex; align-items:center; gap:28px;">
+      <span style="width:8px; height:56px; border-radius:3px; background:var(--accent,#34e0c4);"></span>
+      <h2 style="margin:0; font-size:58px; font-weight:800; letter-spacing:-0.02em;">RANK 3. 술 한 잔의 위로</h2>
+    </div>
+    <div style="flex:1; display:flex; align-items:center; gap:90px; margin-top:20px;">
+      <div style="flex:1;">
+        <h3 style="margin:0 0 30px; font-size:48px; font-weight:800; letter-spacing:-0.01em;"><span>합법적 </span><span style="color:var(--accent,#34e0c4);">마취제</span></h3>
+        <p style="margin:0; font-size:34px; line-height:1.7; color:#aab3c2;">하루의 끝에서 마시는 시원한 맥주 한 잔은 뇌를 일시적으로 마취시켜 줍니다.<br />당장 해결할 수 없는 고민들을 잠시 잊게 만드는 가장 빠른 '비상약'입니다.</p>
+      </div>
+      <img src="assets/beer-photo.jpg" alt="시원한 생맥주 한 잔" style="width:440px; height:620px; object-fit:cover; object-position:center; border-radius:22px; box-shadow:0 30px 70px rgba(0,0,0,0.45); filter:brightness(var(--photo-bright,1));" />
+    </div>
+  </section>
+
+  <!-- 06 · alcohol bullets -->
+  <section data-label="알코올의 휴식" data-screen-label="06" data-speaker-notes="술의 효용은 세 가지. 즉각적인 기분 전환, 억눌린 감정의 분출. 다만 다음 날 숙취는 또 다른 스트레스가 될 수 있다는 점을 잊지 마세요." style="display:flex; flex-direction:column; justify-content:center; padding:96px 110px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <div style="display:flex; align-items:center; gap:28px; margin-bottom:80px;">
+      <span style="width:8px; height:56px; border-radius:3px; background:var(--accent,#34e0c4);"></span>
+      <h2 style="margin:0; font-size:58px; font-weight:800; letter-spacing:-0.02em;">알코올의 짧고 강렬한 휴식</h2>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:30px; margin-bottom:52px;">
+      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--accent,#34e0c4)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-1-8H8c-.5 4-1 6-1 8a5 5 0 0 0 5 5Z"/></svg>
+      <p style="margin:0; font-size:33px; line-height:1.55;"><span style="font-weight:700; color:#eef2f7;">즉각적인 기분 전환:</span> <span style="color:#aab3c2;">도파민 분비를 통해 일시적인 즐거움을 제공합니다.</span></p>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:30px; margin-bottom:52px;">
+      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--accent,#34e0c4)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+      <p style="margin:0; font-size:33px; line-height:1.55;"><span style="font-weight:700; color:#eef2f7;">감정의 분출:</span> <span style="color:#aab3c2;">억눌렸던 솔직한 감정을 털어낼 수 있는 매개체가 됩니다.</span></p>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:30px;">
+      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--accent,#34e0c4)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+      <p style="margin:0; font-size:33px; line-height:1.55;"><span style="font-weight:700; color:#eef2f7;">주의사항:</span> <span style="color:#aab3c2;">다음 날의 숙취는 새로운 스트레스가 될 수 있습니다.</span></p>
+    </div>
+  </section>
+
+  <!-- 07 · SECTION -->
+  <section data-label="RANK 2 · 잠" data-screen-label="07" data-speaker-notes="2위는 잠. 생각이 멈추지 않을 때, 시스템을 강제 종료하는 스위치입니다." style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:100px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <span style="width:64px; height:5px; border-radius:3px; background:var(--accent,#34e0c4); margin-bottom:44px;"></span>
+    <h1 style="margin:0; font-size:92px; font-weight:800; letter-spacing:-0.02em; line-height:1.1;">RANK 2. 잠자기</h1>
+  </section>
+
+  <!-- 08 · reboot (content + full-bleed image) -->
+  <section data-label="내일을 위한 리부트" data-screen-label="08" data-speaker-notes="컴퓨터가 버벅대면 껐다 켜죠. 사람도 같습니다. 이불 속으로 숨는 것은 도망이 아니라 가장 현명한 충전입니다." style="display:flex; padding:0; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <div style="flex:1; padding:96px 84px; display:flex; flex-direction:column; justify-content:center;">
+      <div style="display:flex; align-items:center; gap:28px;">
+        <span style="width:8px; height:56px; border-radius:3px; background:var(--accent,#34e0c4);"></span>
+        <h2 style="margin:0; font-size:58px; font-weight:800; letter-spacing:-0.02em;"><span>내일을 위한 </span><span style="color:var(--accent,#34e0c4);">리부트</span></h2>
+      </div>
+      <p style="margin:52px 0 0; font-size:40px; font-weight:600; color:#eef2f7; line-height:1.4;">컴퓨터가 버벅대면 껐다 켜는 것이 정답입니다.</p>
+      <p style="margin:32px 0 0; font-size:32px; line-height:1.7; color:#aab3c2;">잠은 뇌를 청소하는 과정입니다. 복잡한 고민으로 머리가 터질 것 같을 때, 이불 속으로 숨어버리는 것은 가장 현명한 회피이자 충전입니다.</p>
+    </div>
+    <img src="assets/bedroom.jpg" alt="아늑한 침실" style="width:47%; height:100%; object-fit:cover; filter:brightness(var(--photo-bright,1));" />
+  </section>
+
+  <!-- 09 · sleep science bullets -->
+  <section data-label="수면의 과학" data-screen-label="09" data-speaker-notes="수면이 스트레스를 지우는 세 가지 메커니즘: 뇌척수액이 노폐물을 씻어내고, 감정을 무디게 하고, 싸울 에너지를 회복시킵니다." style="display:flex; flex-direction:column; justify-content:center; padding:96px 110px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <div style="display:flex; align-items:center; gap:28px; margin-bottom:80px;">
+      <span style="width:8px; height:56px; border-radius:3px; background:var(--accent,#34e0c4);"></span>
+      <h2 style="margin:0; font-size:58px; font-weight:800; letter-spacing:-0.02em;">수면이 스트레스를 지우는 과학</h2>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:30px; margin-bottom:52px;">
+      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--accent,#34e0c4)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <p style="margin:0; font-size:33px; line-height:1.55;"><span style="font-weight:700; color:#eef2f7;">뇌 세척 효과:</span> <span style="color:#aab3c2;">수면 중 뇌척수액이 뇌 속 노폐물을 씻어냅니다.</span></p>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:30px; margin-bottom:52px;">
+      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--accent,#34e0c4)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+      <p style="margin:0; font-size:33px; line-height:1.55;"><span style="font-weight:700; color:#eef2f7;">감정 조절:</span> <span style="color:#aab3c2;">부정적인 감정을 무디게 만들어 객관적으로 보게 합니다.</span></p>
+    </div>
+    <div style="display:flex; align-items:flex-start; gap:30px;">
+      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--accent,#34e0c4)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+      <p style="margin:0; font-size:33px; line-height:1.55;"><span style="font-weight:700; color:#eef2f7;">에너지 복구:</span> <span style="color:#aab3c2;">스트레스와 싸울 수 있는 정신적 에너지를 회복합니다.</span></p>
+    </div>
+  </section>
+
+  <!-- 10 · SECTION -->
+  <section data-label="RANK 1 · 망각" data-screen-label="10" data-speaker-notes="1위는 망각. 어떤 약보다 강력한 궁극의 치료제는 시간입니다." style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:100px; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:radial-gradient(1100px 760px at 100% 0%, rgba(52,224,196,0.06), transparent 62%), radial-gradient(950px 720px at 0% 100%, rgba(64,96,196,0.13), transparent 55%), #0b1220;">
+    <span style="width:64px; height:5px; border-radius:3px; background:var(--accent,#34e0c4); margin-bottom:44px;"></span>
+    <h1 style="margin:0; font-size:92px; font-weight:800; letter-spacing:-0.02em; line-height:1.1;">RANK 1. 망각</h1>
+  </section>
+
+  <!-- 11 · big stat over photo -->
+  <section data-label="지우개 100%" data-screen-label="11" data-speaker-notes="핵심 메시지. 지금 죽을 것 같은 고민도 1년 뒤엔 기억나지 않습니다. 시간이 흐르게 두는 것, 그것이 100% 확실한 해소법입니다." style="display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; box-sizing:border-box; font-family:'Pretendard',sans-serif; color:#eef2f7; background:#0b1220;">
+    <img src="assets/whale-bg.jpg" alt="" style="position:absolute; inset:-8%; width:116%; height:116%; object-fit:cover; filter:brightness(var(--photo-bright,1)) blur(32px); transform:scale(1.08);" />
+    <div style="position:absolute; inset:0; background:rgba(9,15,27,0.68);"></div>
+    <div style="position:relative; width:1040px; max-width:82%; padding:72px 64px; text-align:center; background:rgba(11,18,32,0.9); border:1px solid rgba(255,255,255,0.08); border-radius:24px; box-shadow:0 40px 90px rgba(0,0,0,0.5);">
+      <h3 style="margin:0; font-size:44px; font-weight:800; letter-spacing:-0.01em;"><span>내 머릿속의 </span><span style="color:var(--accent,#34e0c4);">지우개</span></h3>
+      <div style="margin:14px 0 20px; font-size:180px; font-weight:800; line-height:1; color:var(--accent,#34e0c4); letter-spacing:-0.03em;">100%</div>
+      <p style="margin:0 0 30px; font-size:38px; font-weight:600; color:#eef2f7;">결국 시간은 모든 것을 지웁니다.</p>
+      <p style="margin:0; font-size:31px; line-height:1.7; color:#aab3c2;">지금 죽을 것 같은 고민도 1년 뒤에는 기억조차 나지 않습니다.<br />시간이 흐르게 두는 것, 그것이 가장 완벽한 해소법입니다.</p>
+    </div>
+  </section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1920, &quot;height&quot;: 1080 },
+  &quot;accentColor&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#34e0c4&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#34e0c4&quot;, &quot;#f5a524&quot;, &quot;#7c9cff&quot;, &quot;#ff7a90&quot;], &quot;section&quot;: &quot;Theme&quot; },
+  &quot;photoBrightness&quot;: { &quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 1, &quot;min&quot;: 0.6, &quot;max&quot;: 1.2, &quot;step&quot;: 0.05, &quot;unit&quot;: &quot;×&quot;, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Theme&quot; }
+}">
+class Component extends DCLogic {
+  componentDidMount() { this._apply(); }
+  componentDidUpdate() { this._apply(); }
+  _apply() {
+    const root = document.documentElement;
+    root.style.setProperty('--accent', this.props.accentColor || '#34e0c4');
+    root.style.setProperty('--photo-bright', this.props.photoBrightness ?? 1);
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
